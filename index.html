@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
 </head>
+
 <body>
-   
-    <p id="pierwszy">Paragraf pierwszy</p>
-    <p id="drugi">Paragraf drugi</p>
-   <input id="przycisk" type="button" value="Kliknij aby ustawicz tlo" onclick="ustawTlo()">
-   
-    <script src="js/warsztat.js" ></script>
+        <form id="formularz" onsubmit="pobierzImie(event)">
+
+        Imię: <input id="imie" type="text" name="fname" value="Krystian">
+
+        <br> Nazwisko: <input id="nazwisko" type="text" name="lname" value="Dziopa">
+        <br>
+
+        <input type="submit" value="Submit">
+
+       <script src="js/Pobierz-Imie.js" ></script>
+    </form>
 </body>
+
 </html>
